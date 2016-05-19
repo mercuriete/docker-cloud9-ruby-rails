@@ -4,6 +4,6 @@ RUN gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB
 RUN curl -sSL https://get.rvm.io | bash -s stable --rails
 
 #install tmux dependency that is needed for minitest
-RUN apt-get install tmux
+RUN apt-get install -y tmux
 
 EXPOSE 8080
